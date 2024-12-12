@@ -7,27 +7,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cee7f3;">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./images/kerala-logo.png" alt="Logo" width="60" height="35">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#aboutkerala">About Kerala</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destinations">Top Destinations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#districts">Districts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
+    
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cee7f3;">
+    <div class="container-fluid d-flex">
+        <!-- Logo aligned to the left -->
+        <a class="navbar-brand" href="#">
+            <img src="./images/kerala-logo.png" alt="Logo" width="60" height="35">
+        </a>
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation links aligned to the right -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutkerala">About Kerala</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Top Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#districts">Districts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
         </div>
-    </nav>
-    <!-- carousal -->
+    </div>
+</nav>
+
+
+
+    
      <!-- Carousel -->
 <div id="keralaCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
