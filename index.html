@@ -4,246 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerala Tourism</title>
-    <style>
-        body{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            line-height: 1.5;
-            line-break:strict;
-        }
-       .nav-align{
-        display: flex;
-        justify-content:space-between;
-        margin: 10PX;
-       }
-       .list-align{
-        display: flex;
-        gap: 40px;
-        text-decoration: none;
-        list-style-type: none;
-       }
-     a{
-        text-decoration: none;
-       }
-       .heading-align,.head-link{
-        text-align: center;
-       }
-       .underline{
-        border-bottom: 1px solid black;
-        padding-bottom: 15px;
-       }
-       .img-gallery{
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-        align-items: center;
-        margin-bottom: 50px;
-       }
-      
-       #destinations{
-        text-align: center;
-       }
-       figcaption{
-        text-align: center;
-       }
-       .article-header{
-        text-align: center;
-       }
-       .map-align{
-        display: flex;
-        justify-content: center;
-       
-       }
-       .align-footer{
-        text-align: center;
-       }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header class="nav-align">
-        <div>
-            <img src="./images/kerala-logo.png" alt="Logo" width="150" >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cee7f3;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/kerala-logo.png" alt="Logo" width="60" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutkerala">About Kerala</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Top Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#districts">Districts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul class="list-align">
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutkerala">About Kerala</a></li>
-                <li><a href="#destinations">Top Destinations</a></li>
-                <li><a href="#districts">Districts</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="underline">
-            <section>
-                <h1 class="heading-align">Come and Enjoy Our Culture</h1>
-                <div class="head-link">
-                    <a href="learnmore.html">Learn More</a>
-                    <a href="#contact">Contact Us</a>
-                </div>
-                
-            </section>
+    </nav>
     
-           
+    <!-- Hero Section -->
+    <div class="text-center py-5" style="background-color: #f8f9fa;">
+        <h1 class="mb-3">Come and Enjoy Our Culture</h1>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="learnmore.html" class="btn btn-primary">Learn More</a>
+            <a href="#contact" class="btn btn-outline-primary">Contact Us</a>
         </div>
-        <section id="destinations">
-            <h1>Top Destinations</h1>
-        </section>    
-       
-            <article class="img-gallery">
+    </div>
 
-                <figure>
-                    <img src="images\pexels-alex-jaison-1690209427-28890056.jpg"  width = 450px alt="logo">
-                    <figcaption>Alappuzha</figcaption>
-                </figure>
-                <div class="fig-para">
-                    <h2 class="article-header">Alappuzha</h2>
-                    <p><strong>Alappuzha,</strong> often referred to as the "Venice of the East," is a picturesque district in Kerala, known for its serene backwaters, lush greenery, and vast network of canals. It is a major hub for Kerala's backwater tourism and offers unique experiences such as houseboat cruises, where visitors can float through tranquil waters while enjoying the beauty of coconut palms, paddy fields, and local villages.
-                    
-                        <br>Alappuzha is famous for its annual Nehru Trophy Boat Race, where traditional snake boats (called "Chundan Vallams") compete in thrilling races that attract tourists from all over the world. The district is also home to beautiful beaches like Alappuzha Beach, which features an old pier and lighthouse, perfect for sunset views and peaceful walks.
-                        <br>Key attractions in Alappuzha include:
-                        <ul class="para-list">
-                            <li><strong>Vembanad Lake:</strong> The largest lake in Kerala, where houseboat tours are a must.</li>
-                            <li><strong>Kumarakom Bird Sanctuary:</strong> A haven for birdwatchers, with species like kingfishers, egrets, and herons.</li>
-                            <li><strong>Ambalappuzha Sri Krishna Temple:</strong> A famous temple known for its classical Kerala architecture and sweet offering called "palpayasam."</li>
-                           
-                        </ul>
-                            </p>
+    <!-- Top Destinations -->
+    <section id="destinations" class="container py-5">
+        <h1 class="text-center mb-5">Top Destinations</h1>
+        <div class="row g-4">
+            <!-- Alappuzha -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/pexels-alex-jaison-1690209427-28890056.jpg" class="card-img-top" alt="Alappuzha">
+                    <div class="card-body">
+                        <h5 class="card-title">Alappuzha</h5>
+                        <p class="card-text">Known as the "Venice of the East," Alappuzha offers serene backwaters and houseboat experiences. Don't miss the Nehru Trophy Boat Race!</p>
+                    </div>
+                    <button class="btn btn-primary m-5">Know More</button>
                 </div>
-               
-            </article>
-
-            <article class="img-gallery">
-
-                <figure>
-                    <img src="images\wayanad.jpg"  width = 450px alt="logo">
-                    <figcaption>Wayanad</figcaption>
-                </figure>
-                <div>
-                    <h2 class="article-header">Wayanad</h2>
-                    <p><strong>Wayanad</strong>, located in the northeastern part of Kerala, is a stunning hill station nestled in the Western Ghats, renowned for its breathtaking natural beauty, wildlife, and spice plantations. It is a paradise for nature lovers, adventure seekers, and those looking to explore the rich cultural heritage of Kerala.
-                    <br>
-                         Key Attractions of Idukki:        
-                        <ul class="para-list">
-                           <li><strong>Edakkal Caves: </strong>These ancient caves are famous for their prehistoric rock engravings that date back to the Neolithic age. A trek up to the caves offers not only a glimpse into history but also a panoramic view of the surrounding landscape.</li>
-                           <li><strong>Wayanad Wildlife Sanctuary:</strong> Part of the Nilgiri Biosphere Reserve, this sanctuary is home to a wide variety of wildlife, including elephants, tigers, leopards, and several species of birds. A safari through the sanctuary offers a thrilling experience in the heart of the forest.</li>
-                           
-                        </ul>
-                    </p>
+            </div>
+            <!-- Wayanad -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/wayanad.jpg" class="card-img-top" alt="Wayanad">
+                    <div class="card-body">
+                        <h5 class="card-title">Wayanad</h5>
+                        <p class="card-text">Explore breathtaking landscapes, wildlife sanctuaries, and spice plantations in this stunning hill station.</p>
+                    </div>
+                    <button class="btn btn-primary m-5">Know More</button>
                 </div>
-               
-            </article>
-
-            <article class="img-gallery">
-
-                <figure>
-                    <img src="images\Athirapilly.jpg"  width = 450px alt="logo">
-                    <figcaption>Athirapilly</figcaption>
-                </figure>
-                <div>
-                    <h2 class="article-header">Athirapilly</h2>
-                    <p><strong>Athirappilly,</strong> often referred to as the "Niagara of India," is one of Kerala's most stunning and largest waterfalls. Located in the Thrissur district, Athirappilly is part of the Chalakudy River and cascades down a height of 80 feet, surrounded by lush greenery and wildlife. It is a prime attraction for nature lovers, adventure seekers, and tourists looking to experience the raw beauty of Kerala’s natural landscape.
-                        <br>
-                        Key Attractions of Idukki:
-                        <ul class="para-list">
-                            <li><strong>Athirappilly Waterfalls:</strong> The majestic waterfall is the star attraction of the area. The thunderous sound of water falling from such a great height, along with the mist rising around it, creates a spectacular and awe-inspiring sight. Visitors can trek down to the base of the falls for a closer view and even enjoy a refreshing dip in the river during the dry season.</li>
-                            <li><strong>Vazhachal Waterfalls: </strong>Just a short drive from Athirappilly, Vazhachal is another impressive waterfall on the Chalakudy River. It offers a more serene experience, with water flowing over smooth rocks and creating gentle cascades. The area around Vazhachal is rich in biodiversity, making it ideal for leisurely nature walks.</li>
-                    </p>
+            </div>
+            <!-- Athirapilly -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/Athirapilly.jpg" class="card-img-top" alt="Athirapilly">
+                    <div class="card-body">
+                        <h5 class="card-title">Athirapilly</h5>
+                        <p class="card-text">Known as the "Niagara of India," Athirapilly offers majestic waterfalls and lush greenery.</p>
+                    </div>
+                    <button class="btn btn-primary m-5">Know More</button>
                 </div>
-               
-            </article>
+            </div>
+        </div>
+    </section>
 
-            <article class="img-gallery">
+    <!-- About Kerala -->
+    <section id="aboutkerala" class="container py-5 text-center">
+        <h1 class="mb-4">About Kerala</h1>
+        <img src="images/Kerala-map-en.png" class="img-fluid mb-4" alt="Kerala Map">
+        <p>Known as "God's Own Country," Kerala is famous for its serene backwaters, lush green hills, vibrant culture, and warm hospitality.</p>
+    </section>
 
-                <figure>
-                    <img src="images\idukki.jpg"  width = 450px alt="logo">
-                    <figcaption>Idukki</figcaption>
-                </figure>
-                <div>
-                    <h2 class="article-header">Idukki</h2>
-                    <p><strong>Idukki,</strong> a lush and mountainous district in the Western Ghats of Kerala, is known for its captivating natural beauty, sprawling tea and spice plantations, and the famous Idukki Dam. As one of the most scenic regions in Kerala, Idukki attracts visitors looking to explore the state’s rich landscapes, wildlife, and unique hill station charm.
-                        <br>
-                        Key Attractions of Idukki:
-                        <ul class="para-list">
-                            <li><strong>Periyar Wildlife Sanctuary:</strong> One of the most renowned wildlife sanctuaries in India, this sanctuary offers opportunities for wildlife safaris, trekking, and bamboo rafting. The sanctuary is home to elephants, tigers, sambar deer, bison, and a variety of bird species, making it a must-visit for nature and wildlife enthusiasts.</li>
-                            <li><strong>Peermade:</strong> Known for its cool climate and beautiful landscapes, Peermade was once the summer retreat of the Travancore royal family. The area is rich in coffee, tea, cardamom, and rubber plantations, making it a peaceful and scenic getaway.</li>
-                           
-                        </ul>
-                            </p>
-                </div>
-               
-            </article>
+    <!-- Districts -->
+    <section id="districts" class="container py-5">
+        <h1 class="text-center mb-4">Districts</h1>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Thiruvananthapuram</li>
+            <li class="list-group-item">Kollam</li>
+            <li class="list-group-item">Pathanamthitta</li>
+            <li class="list-group-item">Alappuzha</li>
+            <li class="list-group-item">Kottayam</li>
+            <li class="list-group-item">Idukki</li>
+            <li class="list-group-item">Ernakulam</li>
+            <li class="list-group-item">Thrissur</li>
+            <li class="list-group-item">Palakkad</li>
+            <li class="list-group-item">Malappuram</li>
+            <li class="list-group-item">Kozhikode (Calicut)</li>
+            <li class="list-group-item">Wayanad</li>
+            <li class="list-group-item">Kannur</li>
+            <li class="list-group-item">Kasaragod</li>
+        </ol>
+    </section>
 
-        </section>
-        <section>
-<!-- Kerala map and About Kerala -->
-            <h1 class="article-header">About Kerala</h1>
-            <figure class="map-align" id="aboutkerala">
-                <img src="images\Kerala-map-en.png" width="500px" alt="log0" >
-            </figure>
-            <p><strong>Kerala,</strong> located on the southwestern coast of India, is often referred to as "God's Own Country" for its breathtaking landscapes, diverse ecosystems, and rich cultural heritage. Known for its serene backwaters, lush green hills, vibrant culture, and warm hospitality, Kerala is a popular destination for travelers seeking both adventure and tranquility.</p>
-        </section>
+    <!-- Contact Us -->
+    <section id="contact" class="container py-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="col-md-6">
+                <label for="visit" class="form-label">Place to Visit</label>
+                <select id="visit" class="form-select">
+                    <option>Idukki</option>
+                    <option>Alappuzha</option>
+                    <option>Athirapilly</option>
+                    <option>Wayanad</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </section>
 
-        <section>
- <!-- Districts - ol and a tag -->
-            <h1 id="districts">Districts</h1>
-            <ol>
-                <li>Thiruvananthapuram</li>                   
-                 <li>Kollam</li>
-                <li>Pathanamthitta</li>
-                <li>Alappuzha </li>
-                <li>Kottayam</li>
-                <li>Idukki</li>
-                <li>Ernakulam</li>
-                <li>Thrissur</li>
-                <li>Palakkad</li>
-                <li>Malappuram</li>
-                <li>Kozhikode (Calicut)</li>
-                <li>Wayanad</li>
-                <li>Kannur</li>
-                <li>Kasaragod</li>
-            </ol>
-
-        </section>
-
-        <section>
-            <!-- Contact Us  form -->
-            <!-- fieldset, legend -->
-            <!-- Add basic validations -->
-              <form action="">
-                <fieldset>
-                    <legend id="contact">Contact Us</legend>
-                    <label for="Name">Name:</label>
-                    <input type="text" id="Name" name="Name" required > <br> <br>
-                    <label for="Email">Email:</label>
-                    <input type="email" id="email" name="email" required><br> <br>
-                    <label for="phone"> Phone:</label>
-                    <input type="number" id="phone" name="number" required><br> <br>
-                    <label for="Place">Place To Visit:</label>
-                    <select name="visit" id="Visit">
-                        <option value="1">Idukki</option>
-                        <option value="2">Alappuzha</option>
-                        <option value="3">Athirapilly</option>
-                        <option value="4">Wayanad</option>
-                    </select> <br> <br>
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </fieldset>
-              </form>
-        </section>
-        
-        
-         
-           
-            
-    </main>
-    <footer class="align-footer">
-        <p> All rights reserved &copy; Kerala Tourism 2024 .</p>
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>All rights reserved &copy; Kerala Tourism 2024</p>
     </footer>
 
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
